@@ -41,7 +41,7 @@ function getApi(latValue,lonValue){
                     console.log(data);
                     for(var i = 0;i<5;i++){
                         var icon = data.list[i].weather[0].icon;
-                        var iconLink = "http://openweathermap.org/img/w/" + icon + ".png";
+                        var iconLink = "https://openweathermap.org/img/w/" + icon + ".png";
                          template = `<div class="card" style="width: 18rem;">
                         <h1 class="card-text">${data.city.name}</h1>
                         <h1 class="card-text">${data.list[i].dt_txt}</h1>             
