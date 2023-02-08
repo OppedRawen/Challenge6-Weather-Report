@@ -70,7 +70,7 @@ function getApi(latValue,lonValue){
 //get api funciton that listens to city name and convert it to lon and lat
 function getCityName(searchInput){
     
-    var requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=5&appid=b3bc862dbbd015f43fc00d688d65a36c`;
+    var requestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=5&appid=b3bc862dbbd015f43fc00d688d65a36c`;
     fetch(requestUrl)
     .then(function(response){
         if(response.ok){
